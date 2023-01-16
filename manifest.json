@@ -1,0 +1,24 @@
+{
+	"name": "Gixen Bulk Bidder",
+	"description": "Mass bid eBay listing.",
+	"version": "1.0",
+	"manifest_version": 3,
+	"permissions": ["storage"],
+	"action": {
+		"default_popup": "popup.html"
+
+	},
+	"icons": {
+
+
+
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["jquery-3.6.0.min.js", "bulkBidder.js"],
+			"css": ["bulkBidder.css"]
+		}
+	],
+	"options_page": "options.html"
+}

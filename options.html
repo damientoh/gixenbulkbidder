@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gixen Bulk Bidder</title>
+		<script src="options.js" defer></script>
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="table2csv.min.js"></script>
+	</head>
+	<body>
+		<button id="clearAll">clear all</button>
+		<button id="downloadCSV" data-table="hiddenTable">DOWNLOAD CSV</button>
+		<table id="viewTable">
+			<tr>
+				<th>Product Id</th>
+				<th>Product Name</th>
+				<th>Price</th>
+				<th>Last Updated</th>
+			</tr>
+		</table>
+		<table id="hiddenTable" style="display: none"></table>
+	</body>
+</html>
